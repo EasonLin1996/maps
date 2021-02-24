@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: inherit;
+}
+body {
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0000004d;
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+}

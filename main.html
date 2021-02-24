@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.css"></link> 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.Default.css"></link> 
+  <script src="https://kit.fontawesome.com/e7300b2889.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.comp.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="loading"><h2>載入中...</h2></div>
+  <div class="container">
+    <div class="sidebar">
+      <div class="sidebar__nav">
+        <h4 class='sidebar__nav-title'><span>更新時間</span><span id='updatetime'></span></h4>
+        <div class="search">
+          <input type="search" class='search__input'>
+          <i class="fas fa-search"></i>
+        </div>
+        <p>搜尋所在縣市、地址、周遭店家名稱等</p>
+        <div class="sidebar__nav-btnbox">
+          <button class="sidebar__nav-btn dropdown">
+            <span id='distext'>距離</span>
+            <ul class='dropdown__list'>
+              <li class='dropdown__item dis active'>可視範圍</li>
+              <li class='dropdown__item dis'>2公里內</li>
+              <li class='dropdown__item dis'>800公尺內</li>
+              <li class='dropdown__item dis'>400公尺內</li>
+            </ul>
+            </button>
+            <button class="sidebar__nav-btn dropdown">
+            <span id='msktext'>口罩種類</span>
+            <ul  class='dropdown__list'>
+              <li class='dropdown__item msk active'>全部</li>
+              <li class='dropdown__item msk'>成人口罩</li>
+              <li class='dropdown__item msk'>兒童口罩</li>
+            </ul>
+            </button>
+        </div>
+  
+        <h4 class='sidebar__nav-title'>星期<span id='weekday'>一</span>，身分證末碼為<span id='watchday'>奇數</span>可購買</h4>
+      </div>
+      <div class="sidebar__content">
+        <ul class='sidebar__content__list'>
+        </ul>
+      </div>
+    </div>
+    <div id="map"></div>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
